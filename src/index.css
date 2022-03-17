@@ -1,0 +1,93 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+body{
+    background-color: #282D35;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #21222A;
+    height:91px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 158px;
+    margin-left: 27px;
+
+}
+
+.logo .image-logo{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo .text-logo{
+    font-weight: 700;
+    font-size: 22.2535px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    color: #61DAFB;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 27px;
+}
+
+.nav-items > li {
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+    color: #DEEBF8
+}
+
+
+.main{
+    padding: 50px;
+}
+
+.main--title{
+    font-weight: 700;
+    font-size: 39.06px;
+    letter-spacing: -0.05em;
+    color: #fff;
+    margin-top: 57px;
+}
+.main--list{
+    margin-top: 47px;
+    padding: 0 30px;
+}
+
+.main--list > li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px;
+    color: #fff;
+}
+.main--list > li::marker {
+    color: #61DAFB;
+    font-size: 1.5em;
+  }
+  
+
+.image__1{
+    position: absolute;
+    right: 0;
+    top: 200px;
+}
+
+.image__2{
+    position: absolute;
+    right: 0;
+    top: 300px;
+}
