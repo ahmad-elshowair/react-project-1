@@ -5,22 +5,31 @@
     font-family: Inter, sans-serif;
 }
 
-body{
-    background-color: #282D35;
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
-    background-color: #21222A;
+    align-items: center;
+    background-color: #fff;
     height:91px;
+    padding: 0 30px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+nav.dark{
+    background-color: #2B283A;
 }
 
 .logo{
     display: flex;
     align-items: center;
     width: 158px;
-    margin-left: 27px;
-
 }
 
 .logo .image-logo{
@@ -36,31 +45,76 @@ body{
     color: #61DAFB;
 }
 
-.nav-items{
-    list-style: none;
+.toggler{
     display: flex;
     align-items: center;
-    margin-right: 27px;
 }
 
-.nav-items > li {
-    font-weight: 600;
-    font-size: 16px;
-    margin-right: 10px;
-    color: #DEEBF8
+.toggler--slider{
+    width: 30px;
+    height: 13px;
+    background-color: #2B283A;
+    border: 1px solid #2B283A;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-inline: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+nav.dark .toggler--slider{
+    background-color: #fff;
+    border: 1px solid #fff;
+    justify-content: flex-end;
 }
 
+.toggler--slider-circle{
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    display: block;
+    border-radius: 50px;
+    
+}
+
+nav.dark .toggler--slider-circle{
+    background-color: #2B283A;
+}
+
+
+.toggler--light {
+    color: #2B283A;
+}
+nav.dark .toggler--light{
+    color: #a5a4a7;
+}
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+nav.dark .toggler--dark{
+    color: #fff;;
+}
 
 .main{
     padding: 50px;
+    background-color: #fff;
+    flex: 1 1 auto;
+}
+
+main.dark{
+    background-color: #2B283A;
 }
 
 .main--title{
     font-weight: 700;
     font-size: 39.06px;
     letter-spacing: -0.05em;
-    color: #fff;
+    color: #2B283A;
     margin-top: 57px;
+}
+
+main.dark .main--title{
+    color:#FFF;
 }
 .main--list{
     margin-top: 47px;
@@ -72,6 +126,10 @@ body{
     font-size: 16px;
     line-height: 19px;
     padding: 10px;
+    color: #2B283A;
+}
+
+main.dark .main--list > li{
     color: #fff;
 }
 .main--list > li::marker {
